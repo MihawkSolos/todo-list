@@ -1,0 +1,102 @@
+:root {
+
+}
+
+body {
+    display: flex; 
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: #364d4d;
+}
+
+img {
+    height: 30px;
+    width: 30px;
+}
+
+.main-title {
+    text-align: center;
+    font-size: 3rem;
+    letter-spacing: 1px;
+}
+
+/** whole body div 'container1' **/
+.container1 {
+
+}
+
+/** SIDEBAR 'container2' START **/
+
+.container2 {
+    width: 200px;
+    padding-left: 1rem;
+}
+
+
+    /** UPPER SECTION OF SIDEBAR START **/
+
+.upper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    letter-spacing: 1px;
+}
+
+.plusBtn {
+    height: 20px;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+
+    /** UPPER SECTION OF SIDEBAR END **/
+
+    /** JS FOR NEW PROJECTS AFTER PLUS BTN CLICKED START **/
+
+.project {
+    display: flex;
+    align-items: center;
+    padding-left: 12px;
+    gap: 4px;
+}
+
+.input {
+    height: 14px;
+    width: 80px;
+}
+
+    /** JS FOR NEW PROJECTS AFTER PLUS BTN CLICKED END **/
+
+/** SIDEBAR 'container2' END **/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/** MAIN CONTENT 'container3' START **/
+
+.container3 {
+    width: 500px;
+}
+
+/** MAIN CONTENT 'container3' END **/

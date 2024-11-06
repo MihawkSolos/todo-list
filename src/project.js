@@ -27,9 +27,5 @@ export class Project {
             console.log(i);
         }
     }
-
-    removeTodo(todoTitle) {
-        this.todos = this.todos.filter(todo => todo.title !== todoTitle);
-    }
 }
 

@@ -1,5 +1,5 @@
 :root {
-
+--background:  #364d4d;
 }
 
 body {
@@ -9,7 +9,7 @@ body {
     padding: 0;
     height: 100vh;
     width: 100vw;
-    background-color: #364d4d;
+    background-color: var(--background);
 }
 
 img {
@@ -25,7 +25,8 @@ img {
 
 /** whole body div 'container1' **/
 .container1 {
-
+    display: flex;
+    gap: 20px;
 }
 
 /** SIDEBAR 'container2' START **/
@@ -42,6 +43,11 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.project-title {
+    font-weight: 900;
+    font-size: 20px;
 }
 
 .title {
@@ -78,11 +84,23 @@ img {
 
     /** JS FOR NEW PROJECTS AFTER PLUS BTN CLICKED END **/
 
+    /** button for new project start **/
+
+.nameBtn {
+    background-color: var(--background);
+    border: none;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: rgb(17, 17, 17);
+}
+
+.nameBtn:hover {
+    color: #fff;
+}
+
+    /** button for new project end **/
+
 /** SIDEBAR 'container2' END **/
-
-
-
-
 
 
 
@@ -97,6 +115,83 @@ img {
 
 .container3 {
     width: 500px;
+    margin-left: 30px;
+    padding-left: 60px;
 }
+
+    /** SECTION FROM INDEX.JS FOR NEW NOTE (card div) START **/
+
+.card {
+    padding-top: 18px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    gap: 3px;
+
+
+}
+
+.plusImg {
+    height: 20px;
+    width: 20px;
+}
+
+.newNoteBtn {
+    background-color: var(--background);
+    border: none;
+    padding: 0;
+}
+
+.newNoteBtn:hover {
+    color: #fff;
+}
+
+    /** SECTION FROM INDEX.JS FOR NEW NOTE (card div) START **/
+
+
+
+    /** NOTE DIV SECTION FROM INDEX.JS WHEN NEW NOTE BTN CLICKED START **/
+
+.noteDiv {
+    width: 400px;
+    background-color: #050505;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    padding: 5px;
+}
+
+.todo {
+    background-color: #050505;
+    color: #fff;
+    height: 18px;
+}
+
+
+
+    /** NOTE DIV SECTION FROM INDEX.JS WHEN NEW NOTE BTN CLICKED START **/
+
+
+
+    /** NEW NOTES BEING DISPLAYED START **/
+
+.note {
+    border: 1px solid black;
+    margin: 12px 0;
+    padding-left: 15px;
+}
+
+.label {
+    font-weight: 700;
+    font-size: 17px;
+}
+
+.radio {
+    margin: 0 0 4px 0;
+    padding: 0 0 0 5px;
+}
+
+    /** NEW NOTES BEING DISPLAYED END **/
 
 /** MAIN CONTENT 'container3' END **/

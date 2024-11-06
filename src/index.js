@@ -1,6 +1,7 @@
 import "./styles.css";
 import folderIcon from '../images/folder-file.svg';
 import plusIcon from '../images/plus-box.svg';
+import trashIcon from '../images/delete.svg';
 
 import {Todo, Project} from './project.js';
 
@@ -42,8 +43,25 @@ plusBtn.addEventListener('click', () => {
                 projectNameDisplay.textContent = newProject.name;
                 project.appendChild(projectNameDisplay);
 
+                const trashImg = document.createElement('img');
+                trashImg.src = trashIcon;
+                trashImg.alt = "Trash";
+                trashImg.classList.add('trash');
+                project.appendChild(trashImg);
+
                 // remove input field
                 input.remove();
+
+
+                //trashImg event listener 
+                trashImg.addEventListener('click', () => {
+
+                    const index = projects.indexOf(newProject);
+                    if(index > -1){
+                        projects.splice(index, 1);
+                    }
+                    project.remove();
+                })
             }
         }
     })
